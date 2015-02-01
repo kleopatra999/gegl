@@ -65,6 +65,7 @@ op_LTLIBRARIES = \
 	high-pass.la \
 	illusion.la \
 	image-compare.la \
+	image-compare-rgb.la \
 	introspect.la \
 	invert-gamma.la \
 	invert-linear.la \
