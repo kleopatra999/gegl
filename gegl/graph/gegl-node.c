@@ -753,8 +753,11 @@ gegl_node_connect_from (GeglNode    *sink,
       real_sink->priv->source_connections = g_slist_prepend (real_sink->priv->source_connections, connection);
       real_source->priv->sink_connections = g_slist_prepend (real_source->priv->sink_connections, connection);
 
-      g_signal_connect (G_OBJECT (real_source), "invalidated",
-                        G_CALLBACK (gegl_node_source_invalidated), sink_pad);
+      g_signal_connect_object (G_OBJECT (real_source),
+                               "invalidated",
+                               G_CALLBACK (gegl_node_source_invalidated),
+                               sink_pad,
+                               0);
 
       gegl_node_source_invalidated (real_source, &real_source->have_rect, sink_pad);
 
