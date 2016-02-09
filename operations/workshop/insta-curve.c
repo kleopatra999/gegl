@@ -726,7 +726,7 @@ gegl_op_class_init (GeglOpClass *klass)
 
   gegl_operation_class_set_keys (operation_class,
     "name",        "gegl:insta-curve",
-    "title",       _("Insta curve"),
+    "title",       _("Insta Curve"),
     "categories",  "hidden",
     "description", _("Apply a preset curve to an image"),
     NULL);
