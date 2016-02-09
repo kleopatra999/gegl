@@ -21,6 +21,7 @@ op_LTLIBRARIES =    \
 	ink-simulator.la \
 	insta-curve.la \
 	insta-filter.la \
+	insta-hefe-curve.la \
 	kuwahara.la \
 	mandelbrot.la \
 	median-blur.la \
